@@ -65,7 +65,7 @@ header nav .navbar .nav-link a::after {
     display: block;
     width: 0%;
     height: 2px;
-    background: var(--purple);
+    background: var(--cyan);
     transition: 0.2s;
 }
 header nav .navbar .nav-link a:hover::after {

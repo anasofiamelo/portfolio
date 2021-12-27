@@ -6,15 +6,15 @@
 }
 /* 6A7FDB */
 html {
-    --cyan: #57e2e5;
-    --blue: #1B263B;
+    --cyan: #FE6D73;
+    --blue: #0b0b0c;
     --blue-palette: linear-gradient(120deg, #219ebc, #81e2ee, #219ebc);
     --white: #eeeeee;
     --black: #02030f;
-    --salmao: #003249;
     --yellow: #ffd116;
     --grey: #222E50;
-    --purple: #D5CAD6;
+    --greyLight: rgba(37, 37, 37, 0.5);
+    --purple: #0BC9CD;
     --roboto: 'Roboto Mono';
     --montserrat: 'Montserrat', sans-serif;
     --open-sans: 'Open-Sans', Meiryo, sans-serif;
@@ -90,7 +90,7 @@ li, a {
     color: var(--black);
 }
 .btn:hover a {
-    color: var(--white);    
+    color: var(--blue);    
 }
 .btn::before {
     content: '';
@@ -140,7 +140,7 @@ li, a {
 }
 .social-number li i {
     font-size: 3.3rem;
-    color: var(--purple);
+    color: var(--cyan);
     margin: 0 1rem;
 }
 .social-number li p {
