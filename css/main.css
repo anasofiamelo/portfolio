@@ -1,22 +1,29 @@
-
-/*  --> About Section  */
-#about, #projects {
-    background: var(--purple);
-}
 #contact {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*  --> About Section  */
+#about, 
+#about .section-title, 
+#projects, 
+#projects .section-title{
+    background: var(--purple);
+    text-align: right;
 }
 #about .about-description {
+    width: 35%;
 }
 .about-container {
     display: flex;
+    justify-content: space-between;
 }
 /*  --> Card (skills) Section  */
 .card-container {
     display: flex;
 }
 .card {
-    margin: 2rem 4rem;
+    margin: 2rem 1rem;
     color: #222;
 }
 .card .face-front {
@@ -61,6 +68,21 @@
     font-size: 1.2em;
     font-family: 'Roboto Mono';
 } 
+/* Cards (projects) section */
+.card-projects-container {
+    width: 70%;
+    /* background: red; */
+    position: relative;
+    display: flex;
+    left: 38.9%;
+}
+.card-project {
+    width: 25rem;
+    height: 40rem;
+    background: var(--white);
+    border-radius: 2.5rem;
+    margin: 2rem;
+}
 /* Titles */
 h1 {
     color: var(--cyan);
@@ -75,20 +97,17 @@ h3 {
     font-family: var(--nycd);
     font-size: 8rem;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
     text-align: left;
-}
-.section-title.right, .section-title.right .section-description {
-    text-align: right;
 }
 .section-description {
     color: var(--grey);
     font-family: var(--lato);
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     font-weight: 400;
 }
 .white {
-    color: var(--white);
+    color: var(--blue);
 }
 .language {
     font-size: 2.3rem;

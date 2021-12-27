@@ -102,7 +102,7 @@ header .title-description {
     margin-top: 10rem;
     font-size: 13rem;    
     color: var(--cyan);
-    font-family: var(--lato);
+    font-family: var(--nycd);
     text-shadow: 5px 5px 0 var(--purple);
     animation: animate 1s linear infinite alternate;
     position: relative;

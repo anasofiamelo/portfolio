@@ -4,16 +4,17 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+/* 6A7FDB */
 html {
-    --cyan: #57E2E5;
+    --cyan: #57e2e5;
     --blue: #1B263B;
     --blue-palette: linear-gradient(120deg, #219ebc, #81e2ee, #219ebc);
     --white: #eeeeee;
     --black: #02030f;
     --salmao: #003249;
     --yellow: #ffd116;
-    --grey: #212121;
-    --purple: #6A7FDB;
+    --grey: #222E50;
+    --purple: #D5CAD6;
     --roboto: 'Roboto Mono';
     --montserrat: 'Montserrat', sans-serif;
     --open-sans: 'Open-Sans', Meiryo, sans-serif;
@@ -127,15 +128,11 @@ li, a {
 .social {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 2rem 0;
 }
 .social-list {
     font-size: 5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .social-number li {
     display: flex;
