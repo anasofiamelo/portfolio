@@ -71,12 +71,20 @@
     font-family: 'Roboto Mono';
 } 
 /* Cards (projects) section */
-.card-projects-container {
+#projects .img-container img,
+#about .img-container img {
     position: relative;
+    left: -12%;
+}
+#contact .img-container img {
+    position: relative;
+    left: 25%;
+}
+.card-projects-container {
     display: flex;
 }
 .card-project {
-    width: 25rem;
+    width: 20rem;
     height: 30rem;
     background: var(--greyLight);
     border-radius: 2.5rem;
@@ -141,7 +149,7 @@ h3 {
     font-size: 2.3rem;
 }
 section {
-    padding: 8rem 23rem;
+    padding: 8rem 40rem;
     box-shadow: 2px 2px 5px rgb(194, 194, 194);
 }
 /* MUSIC PLAYER */

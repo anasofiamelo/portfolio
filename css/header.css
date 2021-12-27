@@ -1,4 +1,7 @@
 /* Header */
+.header-container {
+    padding: 0 40rem;
+}
 .main-header {
     display: flex;
     align-items: center;
@@ -7,7 +10,7 @@
 .nav-container, .navbar, nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .navbar li, nav {
     margin: 0 1rem;
@@ -20,7 +23,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    padding: 2rem 0;
+    padding: 2rem 40rem;
 }
 .up-btn  {
     font-size: 5rem;
@@ -101,9 +104,9 @@ header .title-description {
 #folio {
     margin-top: 10rem;
     font-size: 13rem;    
-    color: var(--cyan);
+    color: var(--purple);
     font-family: var(--nycd);
-    text-shadow: 5px 5px 0 var(--purple);
+    text-shadow: 5px 5px 0 var(--cyan);
     animation: animate 1s linear infinite alternate;
     position: relative;
 }
