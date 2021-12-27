@@ -1,0 +1,59 @@
+body.dark-mode, 
+body.dark-mode header, 
+body.dark-mode main {
+    transition: all 0.3s;
+}
+/* DARK MODE - BACKGROUND BLACK */
+body.dark-mode, 
+body.dark-mode header {
+    background: var(--grey);
+}
+/* DARK MODE - COLOR WHITE */
+body.dark-mode,
+body.dark-mode .title,
+body.dark-mode .name-description, 
+body.dark-mode .face-front i, 
+body.dark-mode .language, 
+body.dark-mode .language-skills p, 
+body.dark-mode .social li a, 
+body.dark-mode .section-title,
+body.dark-mode .section-description,
+body.dark-mode #logo a h2,
+body.dark-mode .btn a,
+body.dark-mode .title-description,
+body.dark-mode .social-number li p {
+    color: #eeeeee;
+}
+body.dark-mode .btn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 0.2rem solid var(--white);
+    background: none;
+    font-family: 'Cairo';
+    transition: .2s;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px var(--white);
+    background: none;
+}
+body.dark-mode .btn:hover {
+    background: var(--cyan);
+}
+body.dark-mode .btn:hover a {
+    color: var(--black);
+}
+body.dark-mode footer {
+    background: #eeeeee;
+    color: var(--black);
+}
+body.dark-mode .nav-container {
+    background: #eeeeee;
+}
+body.dark-mode .container header .header-container .nav-container #logo a h2 {
+    position: relative;
+    z-index: 888;
+    color: var(--black);
+}

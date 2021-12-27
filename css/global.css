@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    --cyan: #57E2E5;
+    --blue: #1B263B;
+    --blue-palette: linear-gradient(120deg, #219ebc, #81e2ee, #219ebc);
+    --white: #eeeeee;
+    --black: #02030f;
+    --salmao: #003249;
+    --yellow: #ffd116;
+    --grey: #212121;
+    --purple: #6A7FDB;
+    --roboto: 'Roboto Mono';
+    --montserrat: 'Montserrat', sans-serif;
+    --open-sans: 'Open-Sans', Meiryo, sans-serif;
+    --lato: 'Lato', sans-serif;
+    --nycd: 'Nothing You Could Do';
+	font-size: 62.5%;
+	/*  --> equivale a 10px   */
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--white);
+}
+body, input, button, textarea {
+    font-size: clamp(14px, 1.6rem, 2vw);
+}
+main, header {
+    transition: all 0.3s;
+}
+footer {
+    text-align: center;
+    color: var(--white);
+    background: var(--purple);
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 4rem;
+}
+.cyan-text {
+    color: var(--cyan);
+    text-shadow: 5px 5px 0 var(--purple);
+}
+.sr-only {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+li, a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Cairo';
+}
+/* Buttons */
+.btn {
+    position: relative;
+    font-family: var(--open-sans);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--black);
+    background: none;
+    transition: .2s;
+    cursor: pointer;
+    z-index: 888;
+    box-shadow: 3px 3px 0px var(--black);
+    white-space: nowrap;
+}
+.btn.about {
+    border: 0.2rem solid var(--black);
+    background: var(--white);
+}
+.btn.about a {
+    color: var(--black);
+}
+.btn a {
+    color: var(--black);
+}
+.btn:hover a {
+    color: var(--white);    
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--cyan);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+}
+.btn.about::before {
+    background: var(--cyan);
+}
+.btn:hover::before {
+    transform: scaleX(1);
+}
+/* Dark-mode */
+.fas.fa-moon, .far.fa-sun {
+    font-size: 2rem;
+    background: transparent;
+    border-radius: 50%;
+    padding: 1rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.fas.fa-moon:hover {
+    background: var(--cyan);
+}
+/* Social icons */
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.social-list {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-number li {
+    display: flex;
+    align-items: center;
+}
+.social-number li i {
+    font-size: 3.3rem;
+    color: var(--purple);
+    margin: 0 1rem;
+}
+.social-number li p {
+    color: var(--black);
+    font-size: 2rem;
+}
+.social .social-list li {
+    margin: 0 2rem;
+}
+
+@media (max-width: 882px){
+    footer {
+        width: 100%;
+    }
+    .card-container {
+        display: grid;
+    }
+    .section-title {
+        font-size: 4.8em;
+    }
+    .section-description {
+        font-size: 1.9rem;
+    }
+}
