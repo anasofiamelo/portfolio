@@ -31,7 +31,7 @@
         display: grid;
         place-items: center;
         position: absolute;
-        top: -300%;
+        top: -400px;
     }
     #nav .navbar {
         display: grid;
@@ -42,7 +42,7 @@
     #nav.active {
         display: grid;
         place-items: center;
-        top: 30%;
+        top: 0px;
         background-color: var(--white);
         width: 100%;
         font-size: 4em;

@@ -1,29 +1,24 @@
 /* Header */
-.header-container {
-    padding: 0 40rem;
-}
 .main-header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 0 20%;
 }
 .nav-container, .navbar, nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .navbar li, nav {
-    margin: 0 1rem;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 .nav-container {
     position: fixed;
-    background: transparent;
+    background: var(--white);
+    padding: 2rem 5%;
+    width: 100%;
     z-index: 999;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    padding: 2rem 40rem;
 }
 .up-btn  {
     font-size: 5rem;
@@ -85,14 +80,11 @@ header nav .navbar .nav-link a:hover::after {
     color: var(--black);
     line-height: 1;
 }
-header .title-description {
+.title-description {
     color: var(--grey);
-    font-size: 2rem;
+    font-size: var(--title-description-size);
     font-family: var(--lato);
     margin: 4rem 0;
-}
-.section-title {
-    text-align: center;
 }
 .nav-container i {
     color: var(--black);
@@ -103,7 +95,7 @@ header .title-description {
 }
 #folio {
     margin-top: 10rem;
-    font-size: 13rem;    
+    font-size: var(--main-title-size);    
     color: var(--purple);
     font-family: var(--nycd);
     text-shadow: 5px 5px 0 var(--cyan);
@@ -119,44 +111,8 @@ header .title-description {
     }
 }
 @media screen and (max-width: 882px) {
-    .description {
-        width: 100%;
-        margin: 0;
-    }
-    .titles .title span {
-        font-size: 3rem;
-    }
-    .titles #folio span {
-        font-size: 6.5rem;
-        margin: 0 0 0 -10rem;
-    }
-    section .section-title {
-        font-size: 5rem;
-    }
-    section .section-description {
-        font-size: 1.7rem;
-        margin: 4rem auto;
-        width: 70vw;
-    }
-    .title-description {
-        font-size: 1.7rem;
-    }
-    #logo {
-        font-size: 1.1rem;
-    }
-    header nav .navbar .nav-link a {
-        font-size: 1.5rem;
-    }
-    header nav .navbar .nav-link {
-        margin: 0 0.3rem;
-    }
-}
-
-@media screen and (max-width: 411px) {
-    .social-list {
-        width: 100vw;
-        font-size: 4.2rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .image {
+        width: 30%;
+        height: 30%;
     }
 }

@@ -14,8 +14,6 @@
 .text-container{ 
     display: flex;
     flex-direction: column;
-    width: 75%;
-    float: right;
 }
 .text-container * {
     margin-bottom: 2rem;
@@ -29,7 +27,7 @@
     color: #222;
 }
 .card .face-front {
-    font-size: 10rem;
+    font-size: var(--skills-icon-size);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,20 +69,11 @@
     font-family: 'Roboto Mono';
 } 
 /* Cards (projects) section */
-#projects .img-container img,
-#about .img-container img {
-    position: relative;
-    left: -12%;
-}
-#contact .img-container img {
-    position: relative;
-    left: 25%;
-}
 .card-projects-container {
     display: flex;
 }
 .card-project {
-    width: 20rem;
+    width: 20rem    ;
     height: 30rem;
     background: var(--greyLight);
     border-radius: 2.5rem;
@@ -131,15 +120,13 @@ h3 {
 .section-title {
     color: var(--black);
     font-family: var(--nycd);
-    font-size: 8rem;
+    font-size: var(--section-title-size);
     text-transform: uppercase;
-    margin-bottom: 0rem;
-    text-align: left;
 }
 .section-description {
     color: var(--grey);
     font-family: var(--lato);
-    font-size: 1.7rem;
+    font-size: var(--section-description-size);
     font-weight: 400;
 }
 .white {
@@ -149,8 +136,7 @@ h3 {
     font-size: 2.3rem;
 }
 section {
-    padding: 8rem 40rem;
-    box-shadow: 2px 2px 5px rgb(194, 194, 194);
+    padding: 7rem 20%;
 }
 /* MUSIC PLAYER */
 .music-player {
@@ -201,7 +187,23 @@ section {
         transform: rotate(360deg);
     }
 }
-
+@media (max-width: 1010px){
+    .image {
+        display: none;
+        width: 400px;
+    }
+}
+@media (max-width: 1080px){
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card-container.projects {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+/* 
 @media screen and (max-width: 1024px) {
     body, .container {
         width: 100vw;
@@ -244,4 +246,4 @@ section {
     #about {
         padding: 2.2rem;
     }
-}
+} */

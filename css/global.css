@@ -20,6 +20,12 @@ html {
     --open-sans: 'Open-Sans', Meiryo, sans-serif;
     --lato: 'Lato', sans-serif;
     --nycd: 'Nothing You Could Do';
+    --main-title-size: clamp(5.3rem, 10vw, 14rem);
+    --title-description-size: clamp(0.1rem, 6vw, 1.8rem);
+    --section-title-size: clamp(4.8rem, 10vw, 8rem);
+    --section-description-size: clamp(1.3rem, 2vw, 2rem);
+    --social-icon-size: clamp(3rem, 2vw, 5rem);
+    --skills-icon-size: clamp(7rem, 6vw, 10rem);
 	font-size: 62.5%;
 	/*  --> equivale a 10px   */
 }
@@ -131,7 +137,7 @@ li, a {
     margin: 2rem 0;
 }
 .social-list {
-    font-size: 5rem;
+    font-size: var(--social-icon-size);
     display: flex;
 }
 .social-number li {
@@ -149,19 +155,4 @@ li, a {
 }
 .social .social-list li {
     margin: 0 2rem;
-}
-
-@media (max-width: 882px){
-    footer {
-        width: 100%;
-    }
-    .card-container {
-        display: grid;
-    }
-    .section-title {
-        font-size: 4.8em;
-    }
-    .section-description {
-        font-size: 1.9rem;
-    }
 }
