@@ -10,13 +10,23 @@
     align-items: center;
     justify-content: space-around;
 }
+#nav, .nav-container-content, .navbar, .header-content-container, .card-container, .section-content {
+    display: flex;
+}
+.nav-container-content, #header-content {
+    /* width: 100vw; */
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.header-content-container, #nav-container {
+    padding: 0 20%;
+}
 .navbar li, nav {
     transition: 0.3s;
 }
-.nav-container {
+#nav-container {
     position: fixed;
     background: var(--white);
-    padding: 2rem 5%;
     width: 100%;
     z-index: 999;
 }
@@ -33,29 +43,22 @@
 }
 .up-btn a {
     color: var(--cyan);
-
 }
 .up-btn.sticky {
     display: block;
 }
-
 header.sticky .nav-container {
     background: var(--white);
 }
-header #logo a {
-    font-family: var(--lato);
-    color: var(--black);
-}
 /* Header --> Navbar */
-
 header nav .navbar .nav-link {
     margin: 0 4.8rem;
 }
-header nav .navbar .nav-link a {
+header nav .navbar .nav-link a, #logo a {
     color: var(--grey);
-    font-size: 3rem;
-    font-family: var(--nycd);
-    font-weight: 400;
+    font-size: 2rem;
+    font-family: var(--roboto);
+    font-weight: 300;
     transition: 0.2s;
 }
 header nav .navbar .nav-link a::after {
@@ -69,16 +72,14 @@ header nav .navbar .nav-link a::after {
 header nav .navbar .nav-link a:hover::after {
     width: 100%;
 }
-
 /* Header --> Description */
 .description {
     margin: 12rem 0;
 }
 .title {
     font-size: calc(1.5rem + 1.5vw);
-    font-family: var(--lato);
+    font-family: var(--nycd);
     color: var(--black);
-    line-height: 1;
 }
 .title-description {
     color: var(--grey);
@@ -86,19 +87,12 @@ header nav .navbar .nav-link a:hover::after {
     font-family: var(--lato);
     margin: 4rem 0;
 }
-.nav-container i {
-    color: var(--black);
-    font-size: 30rem;
-}
-.titles {
-    width: 100%;
-}
 #folio {
     margin-top: 10rem;
     font-size: var(--main-title-size);    
-    color: var(--purple);
+    color: var(--blue);
     font-family: var(--nycd);
-    text-shadow: 5px 5px 0 var(--cyan);
+    text-shadow: 5px 5px 0 var(--light-blue);
     animation: animate 1s linear infinite alternate;
     position: relative;
 }

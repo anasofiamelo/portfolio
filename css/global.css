@@ -4,37 +4,77 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-/* 6A7FDB */
+/* 0BC9CD */
 html {
-    --cyan: #FE6D73;
-    --blue: #222E50;
-    --blue-palette: linear-gradient(120deg, #219ebc, #81e2ee, #219ebc);
+    /* colors */
     --white: #eeeeee;
     --black: #121424;
-    --yellow: #ffd116;
     --grey: #222E50;
+    --cyan: #0BC9CD;
+    --light-blue: #81e2ee;
+    --blue: #219ebc;
+    --salmon: #FE6D73;
+    --darkblue: #222E50;
+    --yellow: #ffd116;
     --greyLight: rgba(37, 37, 37, 0.5);
-    --purple: #0BC9CD;
+    --blue-palette: linear-gradient(120deg, #219ebc, #81e2ee, #219ebc);
+
+    /* font family */
     --roboto: 'Roboto Mono';
     --montserrat: 'Montserrat', sans-serif;
     --open-sans: 'Open-Sans', Meiryo, sans-serif;
     --lato: 'Lato', sans-serif;
     --nycd: 'Nothing You Could Do';
+
+    /* font size */
     --main-title-size: clamp(5.3rem, 10vw, 14rem);
     --title-description-size: clamp(0.1rem, 6vw, 1.8rem);
     --section-title-size: clamp(4.8rem, 10vw, 8rem);
     --section-description-size: clamp(1.3rem, 2vw, 2rem);
     --social-icon-size: clamp(3rem, 2vw, 5rem);
     --skills-icon-size: clamp(7rem, 6vw, 10rem);
-	font-size: 62.5%;
-	/*  --> equivale a 10px   */
+	font-size: 62.5%; /*  --> equivale a 10px   */
 }
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--lato);
     background: var(--white);
 }
 body, input, button, textarea {
     font-size: clamp(14px, 1.6rem, 2vw);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+.btn {
+    position: relative;
+    font-family: var(--roboto);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--black);
+    background: none;
+    transition: .2s;
+    cursor: pointer;
+    z-index: 888;
+    box-shadow: 3px 3px 0px var(--black);
+    white-space: nowrap;
+}
+section.main {
+    margin: 10rem 0;
+    padding: 5rem 20%;
+}
+.section-content {
+    align-items: center;
+    justify-content: space-between;
+}
+#btn-mobile {
+    display: none;
 }
 main, header {
     transition: all 0.3s;
@@ -48,8 +88,8 @@ footer {
     padding: 4rem;
 }
 .cyan-text {
-    color: var(--cyan);
-    text-shadow: 5px 5px 0 var(--purple);
+    color: var(--blue);
+    text-shadow: 5px 5px 0 var(--light-blue);
 }
 .sr-only {
 	position: absolute;
@@ -66,25 +106,9 @@ li, a {
     list-style: none;
     text-decoration: none;
     color: var(--black);
-    font-family: 'Cairo';
+    font-family: 'Lato';
 }
 /* Buttons */
-.btn {
-    position: relative;
-    font-family: var(--open-sans);
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: 0.2rem solid var(--black);
-    background: none;
-    transition: .2s;
-    cursor: pointer;
-    z-index: 888;
-    box-shadow: 3px 3px 0px var(--black);
-    white-space: nowrap;
-}
 .btn.about {
     border: 0.2rem solid var(--black);
     background: var(--white);
@@ -96,7 +120,7 @@ li, a {
     color: var(--black);
 }
 .btn:hover a {
-    color: var(--blue);    
+    color: var(--white);    
 }
 .btn::before {
     content: '';
@@ -128,31 +152,28 @@ li, a {
     cursor: pointer;
 }
 .fas.fa-moon:hover {
-    background: var(--cyan);
+    background: var(--blue);
 }
 /* Social icons */
-.social {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 0;
+.social-number {
+    margin-top: 2rem;
 }
-.social-list {
-    font-size: var(--social-icon-size);
-    display: flex;
+.right {
+    text-align: right;
 }
-.social-number li {
+.social-icon {
+    font-size: 5rem;
+    margin-right: 4rem;
+}
+.contact-icon {
+    font-size: 3rem;
+    color: var(--blue);
+}
+.contact-info {
     display: flex;
     align-items: center;
-}
-.social-number li i {
-    font-size: 3.3rem;
-    color: var(--cyan);
-    margin: 0 1rem;
-}
-.social-number li p {
-    color: var(--black);
     font-size: 2rem;
-}
-.social .social-list li {
-    margin: 0 2rem;
+    font-family: var(--lato);
+    font-weight: 400;
+    margin-left: 2rem;
 }

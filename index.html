@@ -22,49 +22,50 @@
 
             <div class="header-container">
 
-                <div class="nav-container">
-
+                <section id="nav-container">
+                    <div class="nav-container-content">
                         <div id="logo"> 
-                            <a href="#"><h2> &lt;Ana-<span>Sofia</span>&gt; </h2></a>
+                            <a href="#"><h2> &lt;ana-<span>sofia</span>&gt;</h2></a>
                         </div>
-
+            
                         <nav id="nav">
                             <ul class="navbar">
-
+            
                                 <li class="nav-link">
                                     <a href="#about"> sobre </a>
                                 </li>
-
+            
                                 <li class="nav-link">
                                     <a href="#skills"> skills </a>
                                 </li>
-
+            
                                 <li class="nav-link">
                                     <a href="#projects"> projetos </a>
                                 </li>
-
+            
                                 <li class="nav-link">
                                     <a href="#contact"> contato </a>
                                 </li>
-
+            
                             </ul>
-
+            
                             <ul class="dark-mode"> 
                                 <li>
                                     <i class="far fa-sun sr-only"></i>
                                 </li>
-
+            
                                 <li>
                                     <i class="fas fa-moon"></i>
                                 </li>
-
+            
                                 
                             </ul>
                         </nav>
-                        
+                            
                         <button id="btn-mobile"><span id="hamburger"></span></button>
-                        
                     </div>
+                   
+                </section>
                     
                 <div class="main-header">
                     <div class="description"> 
@@ -88,30 +89,30 @@
         </header>
         
         <main>
-            <section id="about">
-                <div class="img-container">
-                    <img class="image"  src="assets/Social Media_Flatline.svg"> 
-                </div>
-                
-
+            <section class="main" id="about">
+            
                 <div class="about-container">
                     <h3 class="section-title white right"> Sobre <span class="cyan-text">mim</span> </h3>
-                    <div class="text-container">
-                        <p class="section-description white about-description"> Me chamo Ana Sofia, 
-                            sou estudante de Análise e Desenvolvimento de Sistemas/programação 
-                            caminhando para ser desenvolvedora fullstack, apaixonada por Javascript 
-                            (React, Angular, Vue, Node), me dedicando cada dia mais à dominar os frameworks/libraries. 
-                            
-                            Estou sempre me desafiando a aprender novas linguagens e iniciando novos projetos pessoais para 
-                            dominar minhas skills.  
-                        </p>
-                        <p> <b>Objetivo: </b> Ser uma profissional fullstack de qualidade. </p>
+                    <div class="section-content">
+                        <div class="img-container">
+                            <img class="image"  src="assets/Social Media_Flatline.svg"> 
+                        </div>
+                        <div class="text-container">
+                            <p class="section-description white right about-description"> Me chamo Ana Sofia, 
+                                sou estudante de Análise e Desenvolvimento de Sistemas/programação 
+                                caminhando para ser desenvolvedora fullstack, apaixonada por Javascript 
+                                (React, Angular, Vue, Node), me dedicando cada dia mais à dominar os frameworks/libraries. 
+                                
+                                Estou sempre me desafiando a aprender novas linguagens e iniciando novos projetos pessoais para 
+                                dominar minhas skills.  
+                            </p>
+                            <p class="right"> <b>Objetivo: </b> Ser uma profissional fullstack de qualidade. </p>
+                        </div>
                     </div>
                 </div>
                     
             </section>
                 <!-- <div class="music-player">
-
                         <div class="triangle-container">
                             <span class="line k"></span>
                             <span class="triangle"></span>
@@ -128,13 +129,13 @@
                             <span class="line kk"></span>
                 </div> -->
 
-            <section id="skills">
+            <section class="main" id="skills">
                 <h3 class="section-title"> Ski<span class="cyan-text">ll</span>s </h3>
                 <p class="section-description"> (linguagens e habilidades que tenho conhecimento)</p>
                 <div class="card-container">
                         <div class="card">
                             <div class="face-front">
-                                <i class="fab fa-js-square"></i>
+                                <i class="fab fa-js-square language-icons "></i>
                                 <p class="language">JavaScript</p>
                             </div>
                             <div class="face-back">
@@ -147,7 +148,7 @@
 
                         <div class="card">
                             <div class="face-front">
-                                <i class="fab fa-node-js"></i>
+                                <i class="fab fa-node-js language-icons"></i>
                                 <p class="language">NodeJS</p>
                             </div> 
                             <div class="face-back">
@@ -160,7 +161,7 @@
 
                         <div class="card">
                             <div class="face-front">
-                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-html5 language-icons"></i>
                                 <p class="language">HTML</p>
                             </div>
                             <div class="face-back">
@@ -173,7 +174,7 @@
 
                         <div class="card">
                             <div class="face-front">
-                                <i class="fab fa-react"></i>
+                                <i class="fab fa-react language-icons"></i>
                                 <p class="language">React</p>
                             </div>
                             <div class="face-back">
@@ -186,7 +187,7 @@
 
                         <div class="card">
                             <div class="face-front">
-                                <i class="fab fa-css3-alt"></i>
+                                <i class="fab fa-css3-alt language-icons"></i>
                                 <p class="language">CSS</p>
                             </div>
                             <div class="face-back">
@@ -199,7 +200,7 @@
 
                         <div class="card">
                             <div class="face-front">
-                                <i class="fab fa-angular"></i>
+                                <i class="fab fa-angular language-icons"></i>
                                 <p class="language">Angular</p>
                             </div>
                             <div class="face-back">
@@ -214,102 +215,108 @@
 
             </section>
             
-            <section id="projects">
-                <div class="img-container">
-                    <img class="image" src="assets/SEO_Flatline.svg">
-                </div>
+            <section class="main" id="projects">
                 <div class="projects-container">
-                    <h3 class="section-title white"> Projetos </h3>
-                    <p class="section-description white">(projetos que desenvolvi)</p>
-                    <div class="card-container projects">
-                        <a target="_blank" href="https://github.com/anasofiamelo/skills-api" class="card-project">
-                            <i class="big-icon fas fa-stream"></i>
-                            <p class="project-name"> API </p>
-                            
-                            <div class="project-languages">
+                    <h3 class="section-title white right"> Pr<span class="cyan-text">ojet</span>os </h3>
+                    <p class="section-description white right">(projetos que desenvolvi)</p>
+                    <div class="section-content">
+                        <div class="img-container">
+                            <img class="image" src="assets/SEO_Flatline.svg">
+                        </div>
+                        <div class="card-container projects">
 
-                                <div class="project-language">
-                                    <div class="point"></div>
-                                    <p> NodeJS </p>
-                                    <i class="fab fa-node"></i>
-                                </div>
-
-                                <div class="project-language">
-                                    <div class="point"></div>
-                                    <p> MySQL </p>
+                            <a target="_blank" href="https://github.com/anasofiamelo/skills-api" class="card-project">
+                                <i class="big-icon fas fa-stream project-icon"></i>
+                                <p class="project-name"> API </p>
+                                
+                                <div class="project-languages">
+    
+                                    <div class="project-language">
+                                        <div class="point"></div>
+                                        <p> MySQL </p>
+                                    </div>
+                                    <div class="project-language">
+                                        <div class="point"></div>
+                                        <p> NodeJS </p>
+                                        <i class="fab fa-node"></i>
+                                    </div>
+    
+                                    
                                 </div>
                                 
-                            </div>
-                            
-                        </a>
-                        <a target="_blank" href="https://github.com/anasofiamelo/skills-angular" class="card-project">
-                            <i class="big-icon fas fa-sticky-note"></i>
-                            <p class="project-name"> Web Page </p>
-
-                            <div class="project-languages">
+                            </a>
+                            <a target="_blank" href="https://github.com/anasofiamelo/skills-angular" class="card-project">
+                                <i class="big-icon fas fa-sticky-note project-icon"></i>
+                                <p class="project-name"> Web Page </p>
+    
+                                <div class="project-languages">
+                                        <div class="project-language">
+                                            <div class="point"></div>
+                                            <p> Consulta backend </p>
+                                        </div>
+                                        <div class="project-language">  
+                                            <div class="point"></div>
+                                            <p> Angular </p>
+                                            <i class="fab fa-angular"></i>
+                                        </div>
+                                    
+                                </div>
+                            </a>
+                            <a target="_blank" href="https://github.com/anasofiamelo/skills-mobile" class="card-project">
+                                <i class="big-icon fas fa-mobile project-icon"></i>
+                                <p class="project-name"> Mobile App </p>
+    
+                                <div class="project-languages"> 
                                     <div class="project-language">
                                         <div class="point"></div>
                                         <p> Consulta backend </p>
                                     </div>
-                                    <div class="project-language">  
+                                    <div class="project-language">
                                         <div class="point"></div>
-                                        <p> Angular </p>
-                                        <i class="fab fa-angular"></i>
+                                        <p> React Native</p>
+                                        <i class="fab fa-react"></i>
                                     </div>
-                                
-                            </div>
-                        </a>
-
-                        <a target="_blank" href="https://github.com/anasofiamelo/skills-mobile" class="card-project">
-                            <i class="big-icon fas fa-mobile"></i>
-                            <p class="project-name"> Mobile App </p>
-
-                            <div class="project-languages"> 
-                                <div class="project-language">
-                                    <div class="point"></div>
-                                    <p> Consulta backend </p>
+                                        
                                 </div>
-                                <div class="project-language">
-                                    <div class="point"></div>
-                                    <p> React Native</p>
-                                    <i class="fab fa-react"></i>
-                                </div>
-                                    
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
+                    
                 </div>
             </section>
 
-            <section id="contact">
+            <section class="main" id="contact">
                 <div class="contact-container">
-                    <h3 class="section-title"> Contato </h3>
+                    <h3 class="section-title"> Co<span class="cyan-text">nta</span>to </h3>
                     <p class="section-description"> (redes sociais onde pode me encontrar) </p>
-                    <div class="social">
-                        <ul class="social-list">
-                            <li><a target="_blank" href="https://github.com/anasofiamelo"><i class="fab fa-github"></i></a></li>
-                            <li><a href="#"><i class="far fa-envelope"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a target="_blank" href="https://www.linkedin.com/in/anasofiamelo2021/"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                        <ul class="social-number">
-                            <li> 
-                                <i class="fas fa-phone-square-alt"></i>
-                                <p> (85) 9 88228047 </p>
-                            </li>
-                            <li> 
-                                <i class="fas fa-envelope-square"></i>
-                                <p> sofiamelod@gmail.com </p>
-                            </li>
-                        </ul>
+                    <div class="section-content">
+                        <div class="social">
+                            <ul class="card-container">
+                                <li><a target="_blank" href="https://github.com/anasofiamelo"><i class="fab fa-github social-icon"></i></a></li>
+                                <li><a href="#"><i class="far fa-envelope social-icon"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter social-icon"></i></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/anasofiamelo2021/"><i class="fab fa-linkedin-in social-icon"></i></a></li>
+                            </ul>
+                            <ul class="social-number">
+                                <li class="card-container"> 
+                                    <i class="fas fa-phone-square-alt contact-icon"></i>
+                                    <p class="contact-info"> (85) 9 88228047 </p>
+                                </li>
+                                <li class="card-container"> 
+                                    <i class="fas fa-envelope-square contact-icon"></i>
+                                    <p class="contact-info"> sofiamelod@gmail.com </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="img-container">
+                            <img class="image" src="assets/Sent messages _Two Color.svg">
+                        </div>
                     </div>
+
                     <button class="btn"> <a target="_blank" href="https://wa.me/85988228047"> Entre em contato </a> </button>
                 </div>
                 
 
-                <div class="img-container">
-                    <img class="image" src="assets/Sent messages _Two Color.svg">
-                </div>
             </section>
         </main>
         

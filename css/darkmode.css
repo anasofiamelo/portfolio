@@ -7,7 +7,7 @@ body.dark-mode .container {
 /* DARK MODE - BACKGROUND BLACK */
 body.dark-mode, 
 body.dark-mode header {
-    background: var(--grey);
+    background: var(--black);
 }
 /* DARK MODE - COLOR WHITE */
 body.dark-mode,
@@ -19,11 +19,10 @@ body.dark-mode .language-skills p,
 body.dark-mode .social li a, 
 body.dark-mode .section-title,
 body.dark-mode .section-description,
-body.dark-mode #logo a h2,
 body.dark-mode .btn a,
 body.dark-mode .title-description,
 body.dark-mode .social-number li p {
-    color: #eeeeee;
+    color: #8D94BA;
 }
 body.dark-mode .btn {
     font-family: 'Open Sans', sans-serif;
@@ -47,11 +46,11 @@ body.dark-mode .btn:hover a {
     color: var(--black);
 }
 body.dark-mode footer {
-    background: #eeeeee;
+    background: #8D94BA;
     color: var(--black);
 }
-body.dark-mode .nav-container {
-    background: #eeeeee;
+body.dark-mode #nav-container {
+    background: #8D94BA;
 }
 body.dark-mode .container header .header-container .nav-container #logo a h2 {
     position: relative;
