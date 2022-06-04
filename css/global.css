@@ -35,6 +35,15 @@ html {
     --skills-icon-size: clamp(7rem, 6vw, 10rem);
 	font-size: 62.5%; /*  --> equivale a 10px   */
 }
+html::-webkit-scrollbar {
+    width: 0.6vw;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: var(--grey);
+}
+html::-webkit-scrollbar-track {
+    background-color: var(--black);
+}
 body {
     font-family: var(--lato);
     background: var(--white);
