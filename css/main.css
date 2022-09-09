@@ -1,121 +1,91 @@
 .text-container {
+  width: 60%;
+  position: relative;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
 }
 .text-container * {
   margin-bottom: 2rem;
 }
-/*  --> Card (skills) Section  */
-.card-container {
+/* Skills Section */
+.skills-container {
+  width: fit-content;
+  margin-top: 4rem;
   display: flex;
+  gap: 3rem;
+  font-size: 1.5rem;
 }
-.card {
-  margin: 2rem 1rem;
-  color: #222;
-}
-.card .face-front {
-  font-size: var(--skills-icon-size);
+.skill-container,
+.icon-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  transition: 0.5s ease-in-out;
-  transform: translateY(0);
+  flex-direction: column;
 }
-.card:hover .face-front {
-  transform: translateY(-15%);
+.language {
+  font-size: 2rem;
 }
-.card .face-back,
-.card-project .project-languages {
-  transform: translateY(100%);
-  opacity: 0;
-  transition: 0.5s ease-in-out;
-}
-.card:hover .face-back,
-.card-project:hover .project-languages {
-  transform: translateY(45%);
-  opacity: 1;
+.icon {
+  font-size: 6rem;
+  color: var(--black);
 }
 .point {
-  background: var(--cyan);
+  background: var(--purple);
   width: 3px;
   height: 3px;
   border-radius: 50%;
   margin-right: 0.6rem;
 }
-.card .face-back .language-skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Cards section */
+.work-cards_container {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 6rem;
 }
-.card i {
-  z-index: 10;
-  color: var(--grey);
-}
-#skills .face-back p {
-  font-weight: 400;
-  font-size: 1.2em;
-  font-family: "Roboto Mono";
-}
-/* Cards (projects) section */
-.card-projects-container {
-  display: flex;
-}
-.card-project {
-  width: 20rem;
-  height: 30rem;
-  background: var(--greyLight);
-  border-radius: 2.5rem;
-  margin: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.card-project * {
-  transition: 0.5s;
-  color: var(--white);
-}
-.card-project .big-icon {
-  transition: 0.5s;
-  font-size: 8rem;
-  margin-bottom: 4rem;
-  opacity: 0.8;
-}
-.card-project:hover * {
-  transform: scale(1.4);
-}
-.project-name {
+.work-card {
+  background-color: var(--);
   font-size: 2rem;
-  font-family: var(--lato);
-}
-.project-language {
   display: flex;
-  align-items: center;
-  font-size: 1rem;
-  padding-bottom: 0.8rem;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.3rem;
 }
-.project-language p {
-  margin: 0 2rem;
+.work-card-title {
+  color: var(--black);
+  border-bottom: 2px solid var(--purple);
+  width: fit-content;
+  font-family: var(--title-font);
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+.work-card-date {
+  opacity: 0.7;
+  font-size: 2rem;
+}
+.work-card-description {
+  color: var(--black);
+  font-size: 1.5rem;
+}
+.work-card-code-link {
+  color: var(--black);
+  cursor: pointer;
+  box-shadow: 3px 3px 0px var(--black);
+  border: 1px solid var(--black);
+  padding: 1rem;
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 /* Titles */
 .section-title {
   color: var(--black);
-  font-family: var(--nycd);
   font-size: var(--section-title-size);
   text-transform: uppercase;
+  font-family: var(--title-font);
 }
-.section-description {
-  color: var(--grey);
-  font-family: var(--lato);
-  font-size: var(--section-description-size);
-  font-weight: 400;
-}
-.about-description {
-  font-size: 1.7rem;
-}
-.language {
-  font-size: 2.3rem;
+h5.section-title {
+  font-size: var(--section-subtitle-size);
 }
 @keyframes rotate {
   0% {
@@ -135,9 +105,5 @@
   .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  .card-container.projects {
-    display: grid;
-    grid-template-columns: 1fr;
   }
 }
