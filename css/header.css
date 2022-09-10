@@ -2,7 +2,6 @@
 .hero-section {
   padding: 10rem 20% 0 20%;
 }
-.nav-container,
 .navbar,
 nav {
   display: flex;
@@ -15,7 +14,7 @@ nav {
 }
 .header-content-container,
 #nav-container {
-  padding: 0 20%;
+  padding: 2rem 20%;
 }
 .navbar li,
 nav {
@@ -69,7 +68,7 @@ header nav .navbar .nav-link a:hover::after {
   animation: animate 1s linear alternate infinite;
 }
 .up-btn a {
-  color: var(--cyan);
+  color: var(--purple);
 }
 .up-btn.sticky {
   display: block;
