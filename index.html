@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/darkmode.css" />
     <link rel="stylesheet" href="css/hamburger.css" />
+    <link rel="stylesheet" href="css/cards.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,16 +46,6 @@
                 <a href="#contact"> Contact </a>
               </li>
             </ul>
-
-            <!-- <ul class="dark-mode">
-              <li>
-                <i class="far fa-sun sr-only"></i>
-              </li>
-
-              <li>
-                <i class="fas fa-moon"></i>
-              </li>
-            </ul> -->
           </nav>
 
           <button id="btn-mobile"><span id="hamburger"></span></button>
@@ -62,13 +53,11 @@
       </section>
 
       <div class="hero-section">
-        <h1 class="title">
-          CREATIVE <span class="middle-title"> DEVELOPER </span>PORTFOLIO
-        </h1>
-        <h3 class="title-description">
-          Portfolio created to record my knowledge and projects in software
-          development
-        </h3>
+        <div class="title-container">
+          <h1 class="title">
+            CREATIVE <span class="middle-title"> DEVELOPER </span>PORTFOLIO
+          </h1>
+        </div>
         <button class="btn">
           <a href="#about"> Check My Work &#8594;</a>
         </button>
@@ -80,15 +69,92 @@
         <h3 class="section-title">About <span class="purple-text">Me</span></h3>
 
         <div class="text-container">
+          <h5 class="section-title">Who am i?</h5>
           <p class="section-description about-description">
-            My name is Ana Sofia, I'm a Systems Analysis and
-            Development/programming student on my way to being a fullstack
-            developer, passionate about Javascript (React, Angular, Vue, Node),
-            dedicating myself more and more each day to mastering
-            frameworks/libraries. I'm always challenging myself to learn new
-            languages ​​and starting new personal projects to master my skills.
+            I'm a 22y.o. developer based in Brazil, working with web robot
+            development (automating repetitive tasks, etc). Passionate about
+            Javascript (React, Angular, Node) dedicating myself more each day to
+            mastering the frameworks/libraries and adapting with ease in
+            learning new technologies.
           </p>
-          <p><b>Objetivo: </b> Ser uma profissional fullstack de qualidade.</p>
+          <p class="section-description about-description">
+            Experience in API development, landing pages, web/android
+            applications using React and high knowledge in HTML/CSS.
+          </p>
+          <h5 class="section-title">
+            Some <span class="purple-text">of my </span>skills
+          </h5>
+          <div class="skills-container">
+            <div class="skill-container">
+              <i class="fab fa-js-square icon"></i>
+              <p class="language">JavaScript</p>
+              <div class="container">
+                <div class="point"></div>
+                <p>Advanced</p>
+              </div>
+            </div>
+            <div class="skill-container">
+              <i class="fab fa-node-js icon"></i>
+              <p class="language">NodeJS</p>
+              <div class="container">
+                <div class="point"></div>
+                <p>Advanced</p>
+              </div>
+            </div>
+            <div class="skill-container">
+              <i class="fab fa-html5 icon"></i>
+              <p class="language">HTML</p>
+              <div class="container">
+                <div class="point"></div>
+                <p>Advanced</p>
+              </div>
+            </div>
+            <div class="skill-container">
+              <i class="fab fa-react icon"></i>
+              <p class="language">React</p>
+              <div class="container">
+                <div class="point"></div>
+                <p>Advanced</p>
+              </div>
+            </div>
+            <div class="skill-container">
+              <i class="fab fa-css3-alt icon"></i>
+              <p class="language">CSS</p>
+              <div class="container">
+                <div class="point"></div>
+                <p>Advanced</p>
+              </div>
+            </div>
+            <div class="skill-container">
+              <i class="fab fa-angular icon"></i>
+              <p class="language">Angular</p>
+              <div class="container">
+                <div class="point"></div>
+                <p>Medium</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-card_container">
+        <div class="about-card">
+          <p class="about-card_number">3</p>
+          <p class="about-card_text">big projects</p>
+        </div>
+
+        <span class="bar"></span>
+
+        <div class="about-card middle">
+          <p class="about-card_number">9</p>
+          <p class="about-card_text">months of xp</p>
+        </div>
+
+        <span class="bar"></span>
+
+        <div class="about-card">
+          <p class="about-card_number">12</p>
+          <p class="about-card_text">courses</p>
         </div>
       </section>
 
@@ -106,7 +172,20 @@
               user's programming skills. This was my first API and deep
               encounter with NodeJS.
             </p>
-            <a class="work-card-code-link">View code</a>
+            <div class="work-card_actions-container">
+              <a
+                target="_blank"
+                href="https://github.com/anasofiamelo/skills-api"
+                class="work-card_code-link"
+                >View code</a
+              >
+              <a
+                href="https://connect-user-with-skills-api.herokuapp.com/lista"
+                target="_blank"
+                class="work-card_code-link"
+                >View live</a
+              >
+            </div>
           </div>
           <div class="work-card">
             <p class="work-card-title">
@@ -118,14 +197,27 @@
               screens like: login, register, welcome user, adding more skills to
               your profile, edit your profile and see others profile.
             </p>
-            <a class="work-card-code-link">View code</a>
+            <div class="work-card_actions-container">
+              <a
+                target="_blank"
+                href="https://github.com/anasofiamelo/skills-angular"
+                class="work-card_code-link"
+                >View code</a
+              >
+              <a
+                target="_blank"
+                href="https://skills-app-angular.herokuapp.com/"
+                class="work-card_code-link"
+                >View live</a
+              >
+            </div>
           </div>
           <div class="work-card">
             <p class="work-card-title">
               Google Books App, <span class="work-card-date">Jan 2022</span>
             </p>
             <p class="work-card-description">Description here...</p>
-            <a class="work-card-code-link">View code</a>
+            <a class="work-card_code-link">View code</a>
           </div>
           <div class="work-card">
             <p class="work-card-title">
@@ -133,60 +225,7 @@
               <span class="work-card-date">Oct 2021</span>
             </p>
             <p class="work-card-description">Description here...</p>
-            <a class="work-card-code-link">View code</a>
-          </div>
-        </div>
-        <h5 class="section-title">
-          Some <span class="purple-text">of my </span>skills
-        </h5>
-        <div class="skills-container">
-          <div class="skill-container">
-            <i class="fab fa-js-square icon"></i>
-            <p class="language">JavaScript</p>
-            <div class="container">
-              <div class="point"></div>
-              <p>Advanced</p>
-            </div>
-          </div>
-          <div class="skill-container">
-            <i class="fab fa-node-js icon"></i>
-            <p class="language">NodeJS</p>
-            <div class="container">
-              <div class="point"></div>
-              <p>Advanced</p>
-            </div>
-          </div>
-          <div class="skill-container">
-            <i class="fab fa-html5 icon"></i>
-            <p class="language">HTML</p>
-            <div class="container">
-              <div class="point"></div>
-              <p>Advanced</p>
-            </div>
-          </div>
-          <div class="skill-container">
-            <i class="fab fa-react icon"></i>
-            <p class="language">React</p>
-            <div class="container">
-              <div class="point"></div>
-              <p>Advanced</p>
-            </div>
-          </div>
-          <div class="skill-container">
-            <i class="fab fa-css3-alt icon"></i>
-            <p class="language">CSS</p>
-            <div class="container">
-              <div class="point"></div>
-              <p>Advanced</p>
-            </div>
-          </div>
-          <div class="skill-container">
-            <i class="fab fa-angular icon"></i>
-            <p class="language">Angular</p>
-            <div class="container">
-              <div class="point"></div>
-              <p>Medium</p>
-            </div>
+            <a class="work-card_code-link">View code</a>
           </div>
         </div>
       </section>
@@ -203,7 +242,7 @@
             <i class="fab fa-github icon"></i>
             <p>GitHub</p>
           </a>
-          <a class="icon-container">
+          <a class="icon-container" href="mailto:sofiamelod@gmail.com">
             <i class="far fa-envelope icon"></i>
             <p>Email</p>
           </a>
@@ -220,11 +259,6 @@
             <p>LinkedIn</p>
           </a>
         </div>
-
-        <!-- <i class="fas fa-phone-square-alt contact-icon"></i>
-        <p class="contact-info">(85) 9 88228047</p>
-        <i class="fas fa-envelope-square contact-icon"></i>
-        <p class="contact-info">sofiamelod@gmail.com</p> -->
 
         <button class="btn">
           <a target="_blank" href="https://wa.me/85988228047">

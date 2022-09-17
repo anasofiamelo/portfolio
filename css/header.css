@@ -1,6 +1,9 @@
 /* Header */
 .hero-section {
   padding: 10rem 20% 0 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .navbar,
 nav {
@@ -28,15 +31,17 @@ nav {
 /* Header --> Navbar */
 header nav .navbar .nav-link a {
   color: var(--black);
-  font-size: 4rem;
-  font-family: var(--title-font);
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: var(--regular-text-font);
   transition: 0.2s;
   margin-left: 8rem;
 }
 header nav .navbar .nav-link a:hover::after {
   width: 100%;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
 }
 .title {
   font-size: var(--main-title-size);
@@ -44,10 +49,11 @@ header nav .navbar .nav-link a:hover::after {
   font-family: var(--title-font);
   display: flex;
   flex-direction: column;
-  /* animation: animate 1s linear infinite alternate; */
+  justify-content: center;
   position: relative;
 }
 .middle-title {
+  margin-left: 20%;
   color: var(--purple);
 }
 .title-description {

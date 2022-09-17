@@ -19,7 +19,7 @@ html {
 
   /* font size */
   --main-title-size: 15rem;
-  --title-description-size: clamp(0.1rem, 6vw, 1.8rem);
+  --title-description-size: clamp(0.1rem, 6vw, 1.5rem);
   --section-title-size: 10rem;
   --section-subtitle-size: 4rem;
   --social-icon-size: clamp(3rem, 2vw, 5rem);
@@ -96,6 +96,7 @@ footer {
   transition: 0.2s;
   cursor: pointer;
   box-shadow: 3px 3px 0px var(--black);
+  margin: 4rem 0;
 }
 .btn:hover a {
   color: var(--white);
@@ -131,9 +132,6 @@ footer {
   background: var(--blue);
 }
 /* Social icons */
-.right {
-  text-align: right;
-}
 .social-icon {
   font-size: 5rem;
   margin-right: 4rem;
