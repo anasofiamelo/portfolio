@@ -7,15 +7,20 @@
   font-weight: bolder;
   padding: 2rem;
   text-align: center;
-  font-size: 3rem;
   font-family: var(--title-font);
   color: var(--purple);
 }
+.about-card_text {
+  text-transform: uppercase;
+  /* width: 15rem; */
+  font-size: 2rem;
+}
 .about-card_number {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 .bar {
-  width: 0.1rem;
+  width: 0.2rem;
+  border-radius: 100rem;
   height: 6rem;
-  background-color: rgba(42, 43, 46, 0.4);
+  background-color: rgba(42, 43, 46, 0.2);
 }
