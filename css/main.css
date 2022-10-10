@@ -151,3 +151,25 @@ h5.section-title {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-card_techs {
+  margin-top: 0.5rem;
+  display: flex;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.work-card_tech {
+  width: fit-content;
+  padding: 0 0.6rem;
+  background-color: var(--grey);
+  border-radius: 0.4rem;
+  text-align: center;
+  margin-right: 0.2rem;
+  opacity: 0.8;
+}

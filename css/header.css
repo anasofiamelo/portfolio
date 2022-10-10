@@ -1,9 +1,12 @@
 /* Header */
 .hero-section {
   padding: 10rem 20% 0 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+.hero-section_img {
+  position: relative;
+  /* animation: name d uration timing-function delay iteration-count direction
+    fill-mode; */
+  animation: animate 5s linear alternate infinite;
 }
 .navbar,
 nav {
@@ -18,6 +21,9 @@ nav {
 .header-content-container,
 #nav-container {
   padding: 2rem 20%;
+}
+#nav-container {
+  background-color: var(--white);
 }
 .navbar li,
 nav {
@@ -39,21 +45,15 @@ header nav .navbar .nav-link a {
 header nav .navbar .nav-link a:hover::after {
   width: 100%;
 }
-.title-container {
-  display: flex;
-  justify-content: center;
-}
+
 .title {
   font-size: var(--main-title-size);
   color: var(--black);
   font-family: var(--title-font);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: relative;
 }
 .middle-title {
-  margin-left: 20%;
   color: var(--purple);
 }
 .title-description {
@@ -80,11 +80,17 @@ header nav .navbar .nav-link a:hover::after {
   display: block;
 }
 @keyframes animate {
-  0% {
-    top: -10px;
+  /* 0% {
+    top: -1rem;
   }
   100% {
-    top: 10px;
+    top: 1rem;
+  } */
+  0% {
+    top: -3rem;
+  }
+  100% {
+    top: 3rem;
   }
 }
 @media screen and (max-width: 882px) {
