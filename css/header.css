@@ -45,7 +45,6 @@ header nav .navbar .nav-link a {
 header nav .navbar .nav-link a:hover::after {
   width: 100%;
 }
-
 .title {
   font-size: var(--main-title-size);
   color: var(--black);
@@ -61,6 +60,40 @@ header nav .navbar .nav-link a:hover::after {
   font-size: var(--title-description-size);
   margin: 4rem 0;
   font-weight: 500;
+}
+.wrapper {
+  line-height: 120px;
+  height: 120px;
+  overflow: hidden;
+  /* background-color: red; */
+}
+.carousel-text-container {
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(4) infinite;
+}
+.carousel-text {
+  position: relative;
+}
+@keyframes slide {
+  100% {
+    top: -480px;
+  }
+}
+.carousel-text::after {
+  content: "";
+  position: absolute;
+  height: 66.5%;
+  width: 100%;
+  border-left: 2px solid var(--purple);
+  left: 0;
+  animation: typing 1.5s steps(10) infinite;
+  background-color: var(--white);
+}
+@keyframes typing {
+  100% {
+    left: 110%;
+  }
 }
 .up-btn {
   font-size: 5rem;
